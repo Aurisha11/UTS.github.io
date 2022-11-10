@@ -1,0 +1,97 @@
+:root {
+  --primary: #6c5d46;
+  --secondary: #fbf3db;
+  --semi-blue: #adcdcb;
+  --dark-blue: #a1c2bb;
+  --brown: #baae94;
+  --gray: #baae94;
+}
+
+@font-face {
+  font-family: Quicksand;
+  src: url("./assets/font/Quicksand-Regular.ttf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary);
+  letter-spacing: 2px;
+}
+
+i {
+  margin-right: 5px;
+}
+
+body {
+  font-family: Quicksand, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--primary);
+
+  color: var(--secondary);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: space-around;
+
+  color: var(--secondary);
+}
+
+header > img {
+  width: 100%;
+  height: auto;
+  max-width: 250px;
+}
+
+main {
+  color: var(--secondary);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+}
+
+main > article {
+  margin-top: 50px;
+}
+
+details {
+  user-select: none;
+  width: 70%;
+}
+
+details img {
+  width: 70%;
+}
+
+details > summary span.icon {
+  width: 25px;
+  height: 25px;
+  transition: all 1s;
+  margin-left: auto;
+}
+
+details[open] summary span.icon {
+  transform: rotate(360deg);
+}
+
+summary {
+  display: flex;
+  cursor: pointer;
+}
